@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Белазы</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/style.css">	
+</head>
+
+<body>
+		<div id="mySidenav" class="sidenav">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+				<div class="header-logo animated">
+						<img src="img/logo.png" alt="Logo">
+				</div>
+
+				<div class="header-timetable animated ">
+						c 9:00 до 21:00 <br> без выходных  
+				</div>
+
+				<div class="header-calls ml-auto animated ">
+						+7(818) 247-47-25 <br>
+						+7 (818) 247-47-25 
+				</div>
+
+				<div class="header-btn  animated ">
+						<button class="btn">
+							Заказать звонок
+						</button>
+				</div>
+		</div>
+	
+
+	<header class="header">
+		<div class="container">
+			<div class="row d-flex align-items-center">
+				<div class="col-3 col-xl-3">
+					<div class="header-logo">
+						<img src="img/logo.png" alt="Logo">
+					</div>
+				</div>
+				<div class="offset-xl-2 col-xl-2 d-none d-xl-block">
+					<div class="header-timetable">
+						c 9:00 до 21:00 <br> без выходных  
+					</div>
+				</div>
+				<div class="offset-xl-1 col-xl-2 d-none d-xl-block">
+					<div class="header-calls ml-auto">
+						+7(818) 247-47-25 <br>
+						+7 (818) 247-47-25 
+					</div>
+				</div>
+				<div class="col-2 col-sm-2 col-md-1 col-xl-2 ml-auto">
+					<div class="header-btn ">
+						<button class="btn">
+							Заказать звонок
+						</button>
+					</div>
+					<a class="openNav" onclick="openNav()">
+						<span></span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="offer">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-6">
+					<div class="offer-content animated fadeInLeft">
+						<h1 class="offer-content-heading"><b>Оригинальные запчасти <br> для Белаз </b></h1>
+						<p class="offer-content-delivery"><b>с бесплатной доставкой <br> в Ваш город!</b></p>						
+						<ul class="offer-content-list">
+							<li class="offer-content-list-item">Дилерские цены - ниже на 20%, работаем без посредников! </li>
+							<li class="offer-content-list-item">Срочная бесплатная доставка за 7 дней</li>
+							<li class="offer-content-list-item">Даем рассрочку 6 месяцев </li>
+							<li class="offer-content-list-item">Даем гарантию  от 12 месяцев</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="get-price">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-8 ml-auto">
+					<div class="get-price-title animated">
+						<h2 class="get-price-text">
+								<b>Получите прайс прямо сейчас <br> на электронную почту! </b> 
+						</h2>
+					</div>					
+					<form action="POST" class="get-price-form">
+							<input type="text" placeholder="Введите ваш e-mail" required>
+							<i class="mail-icon"><img src="img/mail-icon.png" alt=""></i>
+							<input type="tel" placeholder="Введите ваш телефон" pattern="^[ 0-9\s+-]+$">
+							<i><img src="img/call-icon.png" alt="Call"></i>
+							<div class="get-price-send">
+								<p class="get-price-send-text">Прайс придет к Вам на почту <br> в течение 5 минут! </p>
+								<button type="submit" class="btn price">Получить прайс</button>
+							</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="noWait">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="noWait-title">
+						<h2 class="noWait-title-text">
+							<b>Вам не придется ждать!</b>	
+						</h2>
+					</div>
+					<div class="noWait-about">
+						<p class="noWait-about-text">
+							Любые запчасти для всех моделей Белаз всегда в наличии!
+						</p>
+					</div>
+					<div class="noWait-benefits">
+						<div class="noWait-benefits-item animated">
+							<img src="img/engine.png" alt="Engine" class="benefit-img">
+							<p>Любые типы деталей от шайбы до двигателя!   </p>
+						</div>
+
+						<div class="noWait-benefits-item animated">
+							<img src="img/dump-truck.png" alt="Dump" class="benefit-img">
+							<p>Все модификации Белаз от 45т до 450 т </p>
+						</div>
+						
+						<div class="noWait-benefits-item animated">
+							<img src="img/calendar.png" alt="Caneldar" class="benefit-img">
+							<p>Отгружаем в день заказа!</p>
+						</div>
+
+						<div class="noWait-benefits-item animated">
+							<img src="img/Map.png" alt="Map" class="benefit-img">
+							<p>Доставим в любое место!</p>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="priceSection">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="priceSection-title">
+						<h2 class="priceSection-title-text">
+							<b>Ищете конкретную деталь? </b>	
+						</h2>
+					</div>
+					<div class="priceSection-about">
+						<p class="priceSection-about-text">
+							Если у Вас есть артикул - введите его в поле ниже и получите цену ПРЯМО СЕЙЧАС!
+						</p>
+					</div>
+					<form action="POST" class="get-price-form">
+						<input type="text" placeholder="Введите артикул детали" required>
+						<input type="tel" placeholder="Введите ваш телефон" pattern="^[ 0-9\s+-]+$">
+						<i><img src="img/call-icon.png" alt="Call"></i>						
+							<button type="submit" class="btn price two">Получить прайс</button>
+					</form>
+					<div class="priceSection-call">
+						<p class="priceSection-call-text">
+							Мы перезвоним вам в течение 3 минут и назовем цену детали! 
+						</p>
+						<p>Или Вы можете перезвонить нам сами:</p>
+						<p class="priceSection-call-number">
+							+7 (818) 247-47-25 
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="garanty">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="garanty-title">
+						<h3 class="garanty-title-text">
+							<b>Мы гарантируем сохранность деталей во время перевозки! </b>	 
+						</h3>
+					</div>
+					<div class="garanty-benefits">
+						<div class="garanty-benefits-item">
+							<img src="img/garanty.jpg" alt="Garanty">
+							<p class="garanty-benefits-item-text">
+								Гарантия на целостность поставки прописана в договоре 
+							</p>
+							<a href="#" class="garanty-link">Подробнее</a>
+						</div>
+
+						<div class="garanty-benefits-item">
+							<img src="img/package.jpg" alt="Package">
+							<p class="garanty-benefits-item-text">
+								Каждая запчасть доставляется с завода <br> в жесткой упаковке  
+							</p>
+							<a href="#" class="garanty-link">Подробнее</a>
+						</div>
+
+						<div class="garanty-benefits-item">
+							<img src="img/control.jpg" alt="Contol">
+							<p class="garanty-benefits-item-text">
+								Дополнительный контроль качества нашими специалистами
+							</p>
+							<a href="#" class="garanty-link">Подробнее</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="bonus">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="bonus-title">
+						<div class="bonus-title-text">
+						<h3><b>У нас разработаны бонусные системы и скидки для наших клиентов</b></h3>	
+						</div>
+					</div>
+					<div class="bonus-list">
+						<div class="bonus-list-item">
+							<img src="img/circle.png" class ="circle" alt="">
+							<img src="img/10.png" alt="Circle_ten">
+							<p class="bonus-list-item-text">
+								Дополнительная скидка 10% <br> на вторую запчасть и любые последующие
+							</p>
+						</div>
+
+						<div class="bonus-list-item">
+								<img src="img/circle.png" class ="circle" alt="">
+							<img src="img/20.png" alt="Circle_20">
+							<p class="bonus-list-item-text">
+								Скидка 20% при заключении  договора на годовое сервисное обслуживание
+							</p>
+						</div>
+
+						<div class="bonus-list-item">
+								<img src="img/circle.png" class ="circle" alt="">
+							<img src="img/track.png" alt="Track">
+							<p class="bonus-list-item-text">
+								Бесплатная доставка <br> по всей России<br> для всех клиентов 
+							</p>
+						</div>
+
+						<div class="bonus-list-item">
+								<img src="img/circle.png" class ="circle" alt="">
+							<img src="img/telemarketer.png" alt="Telemarketer">
+							<p class="bonus-list-item-text">
+								Бесплатная круглосуточная  техническая поддержка   
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="moreQuestion">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="moreQuestion-title d-flex justify-content-center">
+						<div class="moreQuestion-title-text">
+						<h3><b>У Вас остались вопросы? </b></h3>	
+						</div>
+					</div>
+					<div class="moreQuestion-about d-flex justify-content-center">
+						<p class="moreQuestion-about-text">
+							На Ваши вопросы отвечает Эдуард 
+						</p>
+					</div>
+				</div>				
+			</div>
+			<div class="row">
+				<div class="col-12 col-xl-5">
+					<ul class="moreQuestion-list">
+						<li class="moreQuestion-list-item">
+							<a href="#" class="first-link">Как заказать деталь правильно?</a>
+							<div class="notif first">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eaque temporibus to odio maiores.</p>	 
+								<br>
+								<p>Blanditiis consectetur dolore, nulla omnis officia possimus perferendis earum,erunt. Soluta, fuga.</p>
+								<button class="notif-close-btn"></button>
+							</div>
+						</li>
+						<li class="moreQuestion-list-item"><a href="#" class="second-link">Что делать, если запчасть не понадобилась?</a>
+							<div class="notif second">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eaque temporibus to odio maiores.</p>	 
+								<br>
+								<p>Blanditiis consectetur dolore, nulla omnis officia possimus perferendis earum,erunt. Soluta, fuga.</p>
+								<button class="notif-close-btn"></button>
+							</div>
+						</li>
+						<li class="moreQuestion-list-item"><a href="#" class="third-link">Можете ли вы установить деталь</a>
+							<div class="notif third">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eaque temporibus to odio maiores.</p>	 
+								<br>
+								<p>Blanditiis consectetur dolore, nulla omnis officia possimus perferendis earum,erunt. Soluta, fuga.</p>
+								<button class="notif-close-btn"></button>
+							<button class="notif-close-btn"></button></div>
+						</li>
+						<li class="moreQuestion-list-item"><a href="#" class="fourth-link">В чем преимущества оригинальных деталей?</a>
+							<div class="notif fourth">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eaque temporibus to odio maiores.</p>	 
+								<br>
+								<p>Blanditiis consectetur dolore, nulla omnis officia possimus perferendis earum,erunt. Soluta, fuga.</p>
+								<button class="notif-close-btn"></button>
+							</div>
+						</li>
+						<a href="#" class="reload">Ещё вопросы</a>
+					</ul>
+				</div>
+				<div class="col-12 col-xl-6 ml-auto">
+					<div class="Ed-info">
+						<img src="img/Eduard.jpg" alt="Eduard" class="Ed-pic">
+						<div class="about-Ed">Эдуард Викторович, Директор ООО "Eddie`s-Car"</div>
+					</div>		
+				</div>
+			</div>
+		</div>			
+	</section>
+	<section class="comfortable">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="comfortable-title">
+							<b>С нами удобно работать!   </b>
+					</div>
+
+					<div class="comfortable-about">
+							Более 70% клиентов приходят к нам по рекомендации! 
+					</div>
+
+					<div class="comfortable-list d-flex justify-content-between">
+						<div class="comfortable-list-item">
+							<img src="img/pre_money.png" alt="Pre_money">
+						<p>Вы вносите предоплату в размере 50% от стоимости запчасти </p>	
+						</div>
+
+						<div class="comfortable-list-item">
+							<img src="img/day_car.png" alt="Dat_car">
+							<p>	Отправляем запчасти в день заказа </p>	
+						</div>
+
+
+						<div class="comfortable-list-item">
+							<img src="img/fifty_percent.png" alt="50%">
+							<p>Получаете деталь, проверяете, оплачиваете оставшиеся 50%  </p>	
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="store">
+		<div class="container">
+			<div class="row">
+					<div class="col">
+							<div class="store-title">
+									<b>У нас собственный склад!      </b>
+							</div>
+		
+							<div class="store-about">
+									Это позволяет нам быстро обрабатывать запросы и отгружать детали
+									в день заказа!
+							</div>
+		
+							<div class="store-list d-flex justify-content-between">
+								<div class="store-list-item">
+									<img src="img/storepic1.jpg" alt="Store">	
+								</div>
+		
+								<div class="store-list-item">
+									<img src="img/storepic2.jpg" alt="Store">							
+								</div>
+		
+								<div class="store-list-item">
+									<img src="img/storepic3.jpg" alt="Store">								
+								</div>
+							</div>						
+					</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="brigades">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="brigades-title">
+								<b>У нас в штате есть мобильные бригады, готовые выехать на сервисное 
+									обслуживание, ремонт и проведение диагностики! </b>
+						</div>
+	
+						<div class="brigades-list d-flex justify-content-between">
+							<div class="brigades-list-item">
+								<img src="img/orange-circle.png" alt="Orange_circle">
+								<img src="img/circle-pic1.png" alt="Circle_pic">
+							<p>Организуем выезд специалистов <br>  в течение двух дней  </p>	
+							</div>
+	
+							<div class="brigades-list-item">
+									<img src="img/orange-circle.png" alt="Orange_Circle">
+									<img src="img/circ;e-pic2.png" alt="circle">
+								<p>	Бригады укомплектованы <br>
+									всем необходимым оборудованием для производства работ <br>
+									 любой сложности</p>	
+							</div>
+	
+	
+							<div class="brigades-list-item">
+									<img src="img/orange-circle.png" alt="orange_circle">
+									<img src="img/circle-pic3.png" alt="circlee_pic">
+								<p>Все специалисты проходят обучение и ежегодную аттестацию  </p>	
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</section>
+	<section class="consult">
+		<div class="container">
+			<div class="row">
+					<div class="col">
+							<div class="consult-title">
+									<b>Если Вам необходима бесплатная консультация по вопросу обслуживвания  </b>
+							</div>
+		
+							<div class="consult-about">
+									Звоните нам по телефону: 
+									<p class="tel"> <b>+7 (818) 247-47-25</b> </p>
+							</div>
+		
+							<form action="POST" class="get-price-form">							
+									<input type="tel" placeholder="Введите ваш телефон" pattern="^[ 0-9\s+-]+$">
+									<i><img src="img/call-icon.png" alt="call_icon"></i>						
+									<button type="submit" class="btn price two">Перезвонить сейчас</button>
+							</form>				
+					</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="go-to-office">
+			<div class="container">
+					<div class="row">
+							<div class="col">
+									<div class="consult-title">
+											<b>Приезжайте в наш офис!</b>
+									</div>
+				
+									<div class="consult-about">
+											г. Архангельск, Москва-Сити, оф. 3725 
+											<p class="tel"> <b>+7 (818) 247-47-25</b> </p>
+									</div>									
+							</div>
+					</div>
+				</div>
+	</section>
+	<section class="map"></section>
+
+	<footer class="footer">
+		<div class="container">
+				<div class="row d-flex align-items-center">
+					<div class="col-12 col-md-2">
+						<div class="header-logo">
+							<img src="img/logo.png" alt="Logo">
+						</div>
+					</div>
+					<div class="offset-md-2 col-12 col-md-4">
+						<div class="footer-team">
+							© 2016, CДЕЛАНО С <i><img src="img/love.png" alt="Love"></i>КОМАНДОЙ 
+							<i><img src="img/da-marketing.png" alt="Da"></i>
+						</div>
+					</div>
+					<div class="col-12 col-md-3 ml-auto">
+						<div class="footer-questions ">
+								Есть вопросы? Звоните!
+								<p><b>+7 (818) 247-47-25</b></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a href="#" onclick="return up()">наверх</a>
+	</footer>  
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" 
+		integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk=" crossorigin="anonymous">
+		</script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" 
+		integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous">
+		</script>
+		<script src="js/jquery-3.4.1.min.js"></script>
+		<script src="js/main.js"></script>
+</body>
+
+</html>

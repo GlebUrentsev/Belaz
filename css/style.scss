@@ -1,0 +1,883 @@
+$black:#191919;
+$blue:#1669b3;
+$dark-yellow:#f7b516;
+$white: #fff;
+$light-grey:#f2f2f2;
+$no-wait-bg:#08243e;
+$moreQuestion-bg:#0b3554;
+body{
+    font-family: 'Montserrat', sans-serif;
+    &.noScroll{
+        overflow-y: hidden;
+    }
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+}
+p{
+    margin:0;
+}
+ul,li{
+    padding: 0;
+    margin: 0;
+   
+}
+.header{
+    background: $black;
+    color: $white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    &-timetable{
+        text-align: center;
+        font-size: 13px;
+    } 
+    &-calls{
+        font-weight: bold;
+    }
+}
+.btn{
+    width: 170px;
+    text-align: center;
+    background: $blue;
+    color:$white;
+    border-radius: 0;
+    padding:15px 0;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: bold;
+    border:0; 
+}
+
+.offer{
+    background: url(../img/offer-bg.jpg) no-repeat center top/cover;
+    &-content{
+        background: $dark-yellow;
+        padding: 100px 125px 130px 95px;t
+        
+        &-heading{
+            font-weight: bold;
+            text-transform: uppercase;
+            color:$black;
+            line-height: 55px;
+            font-size: 37px;
+        }
+        &-delivery{
+            font-weight: bold;
+            font-size: 18px;
+            padding: 53px 0 60px 0;
+        }
+        &-list{
+            width: 300px;
+            list-style: none;
+        }
+        &-list-item{
+            padding: 10px 0 5px 50px;    
+            font-size: 14px;
+            font-weight: bolder;    
+            margin-bottom: 20px;
+            &:nth-child(1){
+                background: url(../img/money-icon.png) no-repeat center left;
+            }
+            &:nth-child(2){
+                background: url(../img/car-icon.png) no-repeat center left;
+            }
+            &:nth-child(3){
+                background: url(../img/timetable-icon.png) no-repeat center left;
+            }
+            &:nth-child(4){
+                background: url(../img/garanty-icon.png) no-repeat center left;
+            }
+        }
+    }
+}
+.get-price{
+    background: url(../img/get-price-bg.jpg) no-repeat center top/ cover;
+    padding: 100px 0 150px 0;
+    text-align: right;
+    &-title{
+        opacity: 0;
+    }
+    &-text{
+        font-weight: bolder;
+        font-size: 23px;
+    }
+    &-form{
+        padding-top: 50px;
+    }
+    &-form input{
+        background:$light-grey;
+        border:0;
+        padding: 20px 5px 25px 20px;
+        width: 350px;
+        &:first-child{
+            margin-right: 12px;;
+        }
+        &::placeholder{
+            text-transform: uppercase;
+            font-size: 13px;
+        }      
+    }    
+    &-form input+i{
+        margin-left: -48px;
+        margin-right: 20px;
+    }
+    &-send{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-top: 20px;
+        &-text{
+            font-weight: bold;
+            background: url(../img/clock-icon.png) no-repeat center right;
+            padding-right: 50px;
+            font-size: 15px;
+        }
+    }
+}
+.btn.price{
+    width: 250px;
+    margin-left: 30px;
+    padding:20px 0;
+    font-weight: 700;
+    font-size: 14px;
+    
+}
+.get-price-form input:first-child+i{
+    margin-left: -55px;
+    margin-right: 30px;
+}
+.noWait{
+    background: $no-wait-bg;
+    color:$white;
+    text-align: center;
+    &-title{
+        padding: 95px 0 20px 0;
+        &-text{
+            font-weight: bold;
+        }
+    }
+    &-about-text{
+        width: 350px;
+        margin: 0 auto;
+    }
+    &-benefits{
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+        text-align: center;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        &-item{
+            width: 200px;
+            opacity: 0;         
+        }
+        &-item:nth-child(1).animated{
+            animation-delay: 0.1s;
+        }
+        &-item:nth-child(2).animated{
+            animation-delay: 0.3s;
+        }
+        &-item:nth-child(3).animated{
+            animation-delay: 0.6s;
+        }
+        &-item:nth-child(4).animated{
+            animation-delay: 0.9s;
+        }
+        &-item img{
+            display: block;
+            margin: 0 auto;
+        }
+        &-item p{
+            padding-top: 50px;
+        }
+        &-item:first-child p{
+            padding-top: 40px;
+        }
+    }
+}
+.priceSection{
+    background: url(../img/second-belaz-bg.jpg) no-repeat center top/cover;
+    color:$white;
+    text-align: center;
+    &-title{
+        padding: 80px 0 20px 0;
+        &-text{
+            font-weight: bold;
+        }
+    }
+    &-about-text{
+        width: 590px;
+        margin: 0 auto;
+        padding-bottom: 50px;
+    }
+    &-call-text{
+        padding: 50px 0 30px 0;
+    }
+    &-call-number{
+        padding:20px 0 105px 0;
+        font-weight: bolder;
+        font-size:25px;
+    }
+}
+.btn.price.two{
+    background: $dark-yellow;
+    width: 350px;
+    padding: 24px;
+    margin: 3px 0 0 15px;
+}
+.garanty{
+    &-title{
+        text-align: center;
+        padding: 100px 0 95px 0;
+        &-text{
+            width: 620px;
+            font-weight: bolder;
+            margin: 0 auto;
+        }
+    }
+    &-benefits{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        padding-bottom: 100px;   
+        & img{
+            display: block;
+            margin: 0 auto;
+        }
+        &-item{
+            width: 330px;
+            &-text{
+                font-weight: 700;
+                font-size: 15px;  
+                padding: 36px 0;
+            }  
+                  
+        }
+    }
+    &-link{
+        color:$black;
+        text-decoration: underline;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+}
+.bonus{
+    background: $no-wait-bg;
+    color:$white;
+    text-align: center;
+    &-title{
+        padding-top: 95px;
+        &-text{
+            font-weight: bolder;
+            font-size: 25px;
+            width: 600px;
+            margin: 0 auto;
+        }
+    }
+    &-list{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 105px;
+        padding-bottom: 90px;
+        &-item{
+            position: relative;         
+            width: 300px;  
+            height: 205px;
+            & img{
+                display: block;
+                margin: 0 auto;
+                padding-bottom: 30px;
+            }
+            &-text{
+                font-size: 14px;
+            }
+        }
+    }
+}
+.circle + img{
+    position: absolute;
+    top:20%;
+    right: 50%; margin-right: -30px;
+}
+.bonus-list-item:nth-child(3) img + img{
+    top:18%;
+    right: 50%;
+}
+.bonus-list-item:nth-child(4) img + img{
+    top:15%;
+    right: 54%;
+}
+.moreQuestion{
+    background: $moreQuestion-bg;
+    color:$white;
+    padding-bottom: 100px;
+    &-title{
+        padding-top: 100px;
+    }
+    &-about{
+        padding: 40px 0 100px 0;
+    }
+    &-list{
+        list-style: decimal;      
+        & a{
+            text-decoration: underline;
+            margin-left: 20px;
+            color: $white;   
+            font-weight: bold;       
+        }
+        & a:hover{
+            color:#579eff;
+        }
+        &-item{
+            margin-bottom: 55px;
+        }
+        & li{
+            position: relative;
+        }
+        // & li> a:focus + div{
+        //      transform: scaleY(1);
+        //     opacity:1;
+        // }
+    }
+}
+// .Ed-pic{
+//     position: relative;
+// }
+.Ed-info{
+    position: relative;
+    width: 570px;
+    margin: 0 auto;
+}
+.Ed-pic + div{
+    position: absolute;
+    background: #234f72;
+    bottom: 0;
+    left: 0;
+    width: 230px;
+    font-size: 13px;
+    padding: 8px 15px;
+    opacity: .9;   
+}
+.notif{
+    width: 320px;
+    position: absolute;
+    background: $white;
+    padding: 5px 10px;
+    left:20px;
+    top:50px;
+    display:block;
+    z-index:3;
+    transition:0.3s ease-in-out;
+    transform: scaleY(0);
+    transform-origin: center top;
+    opacity:0;
+    color:$black;
+    font-weight: 600;
+    font-size:15px;
+    &::before{
+        content:'';
+        position: absolute;
+        background: $white;
+        width: 15px;
+        height: 15px;
+        top:-5px;
+        left:6%;
+        transform: rotate(45deg);
+        z-index:-1;
+    }
+    &-show{
+        transform: scaleY(1);
+        opacity:1;
+    }
+    &-close{
+        transform: scaleY(0);
+        opacity:0;
+        &-btn{
+            background: url(../img/crosshair.png) no-repeat center top;
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            border:0;
+            top:8px;  
+            right: 8px;
+        }
+    }
+}
+ .reload{
+     position: relative;
+     &::after{
+         content:'';
+         position: absolute;
+         background: url(../img/reload.png) no-repeat center left;
+         left:-40px;
+         top:-5px;
+         width: 50px;
+         height: 30px;
+
+     }
+ } 
+ .comfortable{
+     text-align: center;
+     color:$black;
+     padding-top: 106px;
+    &-title{
+        font-size: 30px;
+        font-weight: bolder;
+    }
+    &-about{
+        font-size: 17px;
+        padding: 31px 0 90px 0;
+        font-weight: 600;
+    }
+     &-list{
+         padding-bottom: 105px;
+         &-item{
+            width: 225px; 
+            & p{
+                padding-top: 56px;
+                font-weight: 600;
+            }
+         }        
+     }
+ }
+
+.store{
+    background: $moreQuestion-bg;
+    text-align: center;
+    color:$white;
+    padding-top: 106px;
+   &-title{
+       font-size: 30px;
+       font-weight: bolder;
+   }
+   &-about{
+       font-size: 17px;
+       padding: 31px 0 90px 0;
+       font-weight: 500;
+       width: 620px;
+       margin: 0 auto;
+   }
+   &-list{
+       padding-bottom: 100px;
+        &-item img {
+        width: 330px;
+        }
+    }
+}
+
+
+.brigades{
+    text-align: center;
+    color:$black;
+    padding-top: 106px;
+   &-title{
+       font-size: 30px;
+       font-weight: bolder;
+       width: 800px;
+       margin: 0 auto;
+       padding-bottom: 110px;
+   }
+    &-list{
+        padding-bottom: 105px;
+        &-item{
+           width: 320px; 
+           position: relative;
+           & p{
+               padding-top: 56px;
+               font-weight: 600;
+               font-size: 15px;
+           }
+           & img + img{
+            position: absolute;
+            left: 50%; 
+            top: 50%;
+            transform: translate(-50%,-180%);
+           }
+        }        
+    }
+}
+.consult{
+    background: url(../img/consultation.jpg) no-repeat center top/cover;
+    text-align: center;
+    color:$white;
+    &-title{
+        font-size: 23px;
+        font-weight: bolder;
+        padding: 100px 0 60px 0;
+    }
+    &-about{
+        font-size: 15px;
+         & p{
+        padding:10px 0 60px 0;
+        font-weight: bolder;
+        font-size: 25px;
+        }
+    } 
+    & .get-price-form{
+        padding-top: 0;
+        padding-bottom: 100px;
+    }
+}
+.go-to-office{
+    background: url(../img/go-to-offoce.jpg) no-repeat center top/cover;
+    text-align: center;
+    & .consult-about p{
+        padding-bottom: 100px;
+    } 
+}
+ .map{
+     background: url(../img/map.jpg) no-repeat center top/cover;
+     height: 380px;
+ }
+ .footer{
+     background: $black;
+     color:$white;
+     padding: 50px 0;
+     font-size: 14px;
+     &-questions{
+         text-align: right;
+         & p{
+             font-size: 17px;
+         }
+     }
+     &-team{
+         position: relative;
+         & i:first-child {
+           margin: 0 10px;;
+        }
+         & i:last-child {
+             position: absolute;
+             right: 5px;
+             top: 0;
+         }
+     }
+ }
+ .sidenav {
+    height: 100%; /* 100% Full-height */
+    width:0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+     text-align: center;
+    padding-top: 35%; 
+    z-index: 99;
+    color: $white;
+    opacity: .9;
+    & a{
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+    & .closebtn{
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+    & div{
+        margin-bottom: 30px;
+        transition: all 0.7s ease-in-out;
+    }
+    & div:nth-child(2).animated{
+        animation-delay: 0.1s;
+    }
+    & div:nth-child(3).animated{
+        animation-delay: 0.2s;
+    }
+    & div:nth-child(4).animated{
+        animation-delay: 0.3s;
+    }
+    & div:nth-child(5).animated{
+        animation-delay: 0.4s;
+    }
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+.openNav {
+    display: none;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    position: relative;
+    z-index: 5;
+  }
+  .openNav span,
+  .openNav span::before,
+  .openNav span::after {
+    position: absolute;
+    top: 50%; margin-top: -1px;
+    left: 50%; margin-left: -10px;
+    width: 20px;
+    height: 2px;
+    background: white;
+  }
+  .openNav span::before,
+  .openNav span::after {
+    content: '';
+    display: block;
+    transition: 0.2s;
+  }
+  .openNav span::before {
+    transform: translateY(-5px);
+  }
+  .openNav span::after {
+    transform: translateY(5px);
+  }
+
+//responsive
+
+@media screen and (max-width: 1200px){
+    .header-calls{
+        font-size: 13px;
+    }
+
+    .offer-content{
+        text-align: center;
+        &-list{
+            margin: 0 auto;
+        }
+    }
+
+    .priceSection .btn.price.two{
+        margin-top: 20px;
+    }
+    .moreQuestion-list{
+       margin-left: 50%; transform: translate(-40%);
+    }
+    .Ed-pic{
+        display: block;
+        margin-top: 130px;
+    }
+    .store-list{
+        flex-direction: column;
+        &-item{
+            margin-bottom: 20px;
+        }
+    }
+    .footer-team i:last-child{
+        top:25px;
+        left:100px;
+    }
+    .openNav{
+        display: block;
+        border:0;
+        // position: absolute;
+        // right: 10%;
+        // top: 3%;
+    }
+    .header{
+        & .header-btn{
+            display: none;
+        }
+        & .header-calls{
+            display: none;
+        }
+        & .header-timetable{
+            display: none;
+        }
+    }
+} 
+
+@media screen and (max-width: 992px){
+    .get-price-form input:first-child{
+        margin-right:0;
+        margin-bottom: 14px;
+    }
+    .get-price-form input:first-child + i{
+        margin-right: 25px;
+    }
+    .noWait-benefits{
+        flex-direction: column;
+        &-item{
+            margin-bottom: 40px;
+        }
+    }
+    .priceSection .btn.price.two{
+        margin-right: 10px;
+    }
+    .garanty-benefits{
+        flex-direction: column;
+        &-item{
+            margin-bottom: 30px;
+        }
+    }
+    .moreQuestion-list{
+        width: 500px;
+    }
+    .footer-questions p{
+        font-size: 15px;
+    }
+    .footer-team{
+        margin-left: 40px;
+    }
+    .footer-team i:last-child{
+        top: 40px;
+        left: 30px;
+    }
+    .brigades-title{
+        font-size: 20px;
+        width:auto;
+    }
+    .brigades-list{
+        flex-direction: column;
+        align-items: center;
+        &-item{
+            margin-bottom: 30px;
+        }
+    }
+    .brigades-list-item:last-child img + img{
+       top: 60%;
+    }
+    .brigades-list-item:first-child img + img{
+        top: 56%;
+     }
+     .btn.price.two{
+        margin-right: 10px;
+     }
+}
+
+@media screen and (max-width: 767px){
+    .bonus-list{
+        flex-direction: column;
+        &-item{
+            margin-bottom: 30px;
+        }
+    }
+    .store-about{
+        width: auto;
+    }
+    .footer{
+        text-align: center;
+    }
+    .footer-team{
+        margin: 30px 0;
+    }
+    .footer-team i:last-child{
+        top: 25px;
+        left:10px
+    }
+    .footer-questions {
+        text-align: center;
+    }
+    .priceSection-about-text{
+        width: auto;
+    }
+    .garanty-title-text{
+        width:auto;
+    }
+    .bonus-title-text{
+        width: auto;
+    }
+    .Ed-pic{
+        display: block;
+        max-width: 100%;
+    }
+    .Ed-info{
+        width: auto;
+    }
+    .comfortable-list{
+        flex-direction: column;
+        align-items: center;
+        &-item{
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 600px){
+    .moreQuestion-list{
+        width: 400px;
+    }
+    .offer-content{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 490px){
+    .offer-content-heading{
+        font-size: 20px ;
+    }
+    .offer-content-list{
+        width: auto;
+    }
+    .moreQuestion-list{
+        width: 300px;
+    }
+    .offer-content{
+        padding: 100px 35px 100px 35px;
+    }
+    .notif{
+        width: 250px;
+        height: 200px;
+    }
+    .get-price-text{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 426px){
+    .moreQuestion-title-text{
+        text-align: center;
+    }
+    .get-price-form input + i{
+        display: none;
+    }
+    .noWait-about-text{
+        width: auto;
+    }
+    .get-price-send{
+        flex-direction: column;
+        & button{
+           margin: 30px 0;
+        }
+    }
+    .openNav{
+        right: 30px;
+    }
+}
+@media screen and (max-width: 400px){
+    .btn.price.two{
+        width: 250px;
+    }
+    .get-price-form input{
+        width: 250px;
+    }
+    .store-list-item img{
+        width: 250px;
+    }
+    .Ed-pic+div{
+        bottom: -54px;
+    }
+}
+@media screen and (max-width: 360px){
+    .moreQuestion-list{
+        width: 220px;
+    }
+    .garanty-benefits-item{
+        width: 250px;
+    }
+    .notif{
+        width: 220px;
+        height: 200px;
+        overflow: auto;
+    }
+}
+
